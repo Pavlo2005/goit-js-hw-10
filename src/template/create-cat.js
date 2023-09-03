@@ -1,4 +1,4 @@
-function createCat({ url, width, height, breeds }) {
+function createCat({ url, breeds }) {
   const element = `
     <div class="container-cat">
         <div class="cat-img-wrap">

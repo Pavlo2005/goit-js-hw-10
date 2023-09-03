@@ -4,12 +4,9 @@ import { fetchBreeds } from './cat-api';
 import { createCats } from "./create-cats";
 import { catchErr } from "./catch-err";
 import { handlerSelect } from "..";
+import { element } from '..';
 
 const select = document.querySelector('.js-select');
-
-const element = {
-    loader: document.querySelector('.js-loader')
-}
 
 function addSelect() {
     fetchBreeds()

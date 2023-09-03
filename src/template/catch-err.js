@@ -1,7 +1,4 @@
-const element = {
-    error: document.querySelector('.js-error'),
-    loader: document.querySelector('.js-loader')
-}
+import { element } from "..";
 
 function catchErr() {
     element.loader.classList.replace('loader', 'loader-hidden');

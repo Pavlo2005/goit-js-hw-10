@@ -43,7 +43,7 @@ function handlerSelect() {
         });
 }
 
-export { handlerSelect };
+export { handlerSelect, element };
 
 
 
