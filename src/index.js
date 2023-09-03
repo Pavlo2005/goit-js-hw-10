@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import { addSelect } from "./template/add-select";
-import { serviceCat } from "./template/service-cat";
+import { fetchCatByBreed } from "./template/cat-api";
 import { createCat } from "./template/create-cat";
 import { catchErr } from "./template/catch-err";
 
@@ -27,9 +27,9 @@ function handlerSelect() {
     element.loader.classList.replace('loader-hidden', 'loader');
     element.error.classList.replace('error', 'error-hidden');
 
-    serviceCat(link.cat1, select.value)
+    fetchCatByBreed(link.cat1, select.value)
         .then(data => {
-            serviceCat(link.cat2, data[0].id)
+            fetchCatByBreed(link.cat2, data[0].id)
                 .then(data => {
                     element.cat.innerHTML = createCat(data);
                     element.loader.classList.replace('loader', 'loader-hidden');

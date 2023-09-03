@@ -3,6 +3,11 @@
     width: 600px;
 }
 
+.breed-select-hidden {
+    display: none;
+    visibility: hidden;
+}
+
 .error-hidden {
     display: none;
 }
