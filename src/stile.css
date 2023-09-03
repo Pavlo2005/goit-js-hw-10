@@ -1,0 +1,41 @@
+.breed-select {
+    margin-bottom: 32px;
+}
+
+.error-hidden {
+    display: none;
+}
+
+.error {
+    display: inline-block;
+    color: red;
+}
+
+.loader-hidden {
+    display: none;
+}
+
+.loader {
+    display: inline-block;
+}
+
+.container-cat {
+    display: flex;
+}
+
+.cat-img-wrap {
+    margin-right: 32px;
+}
+
+.cat-description {
+    width: 600px;
+}
+
+.temperament {
+    width: 600px;
+}
+
+.temperament-title {
+    font-weight: 700;
+    font-size: 18px;
+}
