@@ -1,5 +1,4 @@
 function serviceCat(link, id) {
-    console.log(`${link}${id}`);
     return fetch(`${link}${id}`)
         .then(resp => {
             if (!resp.ok) {

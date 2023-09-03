@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import { addSelect } from "./template/add-select";
 import { serviceCat } from "./template/service-cat";
 import { createCat } from "./template/create-cat";
@@ -16,8 +17,6 @@ const element = {
 
 addSelect();
 
-select.addEventListener('input', handlerSelect);
-
 const link = {
     cat1: 'https://api.thecatapi.com/v1/images/search?breed_ids=',
     cat2: 'https://api.thecatapi.com/v1/images/'
@@ -32,7 +31,6 @@ function handlerSelect() {
         .then(data => {
             serviceCat(link.cat2, data[0].id)
                 .then(data => {
-                    console.log(data);
                     element.cat.innerHTML = createCat(data);
                     element.loader.classList.replace('loader', 'loader-hidden');
                 })
@@ -44,6 +42,8 @@ function handlerSelect() {
             catchErr();
         });
 }
+
+export { handlerSelect };
 
 
 

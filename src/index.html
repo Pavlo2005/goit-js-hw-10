@@ -6,11 +6,17 @@
     <title>Homework 10</title>
 
     <link rel="stylesheet" href="stile.css" />
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
   </head>
   <body>
-    <select class="breed-select js-select">
-    </select>
-    <p class="js-loader loader-hidden" hidden>Loading data, please wait...</p>
+    <div class="breed-selec-container">
+      <select id="selectElement" class="breed-select js-select">
+      </select>
+    </div>
+    <div class="loader-container">
+      <p class="js-loader loader-hidden"></p>
+    </div>
     <p class="js-error error-hidden" hidden>Oops! Something went wrong! Try reloading the page!</p>
     <div class="cat-info js-cat-info">
     </div>
