@@ -1,4 +1,5 @@
 import SlimSelect from 'slim-select'
+import 'slim-select/dist/slimselect.css';
 
 import { fetchBreeds } from './cat-api';
 import { createCats } from "./create-cats";
